@@ -4,7 +4,6 @@ import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import { FaSun, FaMoon, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 import Header from "./components/Header";
 import Profile from "./components/Profile";
-import Skills from "./components/Skills";
 
 function App() {
 
@@ -25,7 +24,6 @@ function App() {
         <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
       </Flex>
       <Header></Header>
-      <Skills></Skills>
       <Profile></Profile>
       
     </VStack>
