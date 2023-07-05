@@ -29,7 +29,7 @@ function Profile() {
         {
             text: "Contact me",
             icon: MdOutlineMailOutline,
-            description: "name@gmail.com",
+            description: "airamariedecastroladera@gmail.com",
         },
       ];
 
