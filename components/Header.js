@@ -16,9 +16,7 @@ function Header() {
     const [desktop] = useMediaQuery("(min-width:600px)");
 
     return (
-        <Stack>
-            <Flex padding='5' spacing="100px" 
-                alignItems={desktop ? "flex-start" : "center"} alignSelf="flex-start">
+        <HStack padding='2' spacing='100px' justify='center' alignItems='center'>
                 <Box mt={desktop ? "0" : '0'} align='flex-start'>
                     <Text fontSize="5xl" fontWeight="semibold">Hi, I am</Text>
                     <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>Aira Marie Ladera</Text>
@@ -31,11 +29,8 @@ function Header() {
                         <Icon as={BiLogoPython} boxSize="50" />
                     </HStack>
                 </Box>
-
                 <img src={airaimage} alt="Aira" />
-
-            </Flex>
-        </Stack>
+        </HStack>
     )
 }
 
